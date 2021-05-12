@@ -66,7 +66,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.SAMPLESERVER_GHCR_PAT }}
       - name: Build Docker Release
-        uses: "docker/build-push-action@v2"
+        uses: "docker/build-push-action@v2.4.0"
         with:
           file: "./Sample-Server/.github/Dockerfile"
           context: .
